@@ -21,7 +21,18 @@ body{
 
 #sidebar{
     grid-area: 1/1/4/2;
-    background-color: #ba96ef;
+    background-color: #bda3e6;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+}
+
+#inputs{
+    margin:auto;
+    font-size: large;
+    line-height: 2em;
+    justify-self: center;
 }
 
 #top{
@@ -32,7 +43,7 @@ body{
 
 #middle{
     grid-area: 2/2/3/3;
-    background-color: #96efba;
+    background-color: #d4ecdd;
     display: grid;
 
 }

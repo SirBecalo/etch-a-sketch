@@ -3,10 +3,12 @@ let sidebar = document.querySelector("#sidebar");
 let  header = document.querySelector("#top");
 let middle = document.querySelector("#middle");
 let footer = document.querySelector("#foot");
+let inputs = document.querySelectorAll(".radio1");
+
 //document vars
 
 let size = prompt("size of grid? ")
-
+//a function that transforms the "middle" into a grid of boxes depending on size
 function makeBoxes(size) {
     let repeatString = "repeat(" + size + ", 1fr)"
     console.log(repeatString);
@@ -16,7 +18,7 @@ function makeBoxes(size) {
     return; 
     
 }
-
+//a function that puts a div into each box
 function setDivs(size) {
 
     
@@ -35,6 +37,25 @@ function setDivs(size) {
     }
 }
 
+function makeDivBlack(divID){
+    document.querySelector(divID).style.backgroundColor = "black";
+}
 
 makeBoxes(size);
 setDivs(size);
+
+
+inputs.addEventListener("click", draw())
+function draw() {
+    inputs.forEach(radio => {
+        if(radio.checked){
+            
+            middle.addEventListener("hover", makeDivBlack(middle.child))
+
+
+
+
+        }
+        
+    });
+}
