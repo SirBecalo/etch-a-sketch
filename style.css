@@ -65,3 +65,13 @@ body{
     flex-direction: row;
     flex-flow: wrap;
 }
+
+.table{
+    table-layout: fixed;
+    width: 100%;
+
+}
+
+td{
+    color: white;
+}

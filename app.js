@@ -1,21 +1,35 @@
 //palette: EEF4D4 DAEFB3 D1B1CB 2E2F2F 051014
-const sketch = document.querySelector(".sketch") //where the magic happens!
+const table = document.querySelector(".table") //where the magic happens!
 
 //sheinanigans to be understood
 // const num = 6
 // const dimension = 50/num
 
-const box = document.createElement('div') //the template for a pixel
+//table templates
+const tr = document.createElement('tr')
+const td = document.createElement('td')
+
+//the template for a pixel
+const box = document.createElement('div')
 box.style.border = '1px solid lightgray'
 box.style.width = `${dimension}%`
 box.style.height = `${dimension}%`
 box.classList.add("box")
 // old, folded
 // for (let i = 0; i < num * num; i++) {
-//     sketch.appendChild(box.cloneNode(true))
+//     table.appendChild(box.cloneNode(true))
 // }
 
+//trying to place pixels with table element
 let gridSize = 6
 
-//trying to place pixels with table element
+for (let horizontal = 0; horizontal < gridSize; horizontal++) {
+    const row = tr.classList.(horizontal)
+    for (let vertical = 0; vertical < gridSize; vertical++) {
+        new col = td.classList.add(vertical)
+        row.appendChild(col)
 
+    }
+    table.appendChild(row)
+ }
+    
