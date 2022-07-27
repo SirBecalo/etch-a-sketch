@@ -23,10 +23,11 @@ box.classList.add("box")
 //trying to place pixels with table element
 let gridSize = 6
 
+
 for (let horizontal = 0; horizontal < gridSize; horizontal++) {
-    const row = tr.classList.(horizontal)
+    const row = tr.className.add(horizontal.toString())
     for (let vertical = 0; vertical < gridSize; vertical++) {
-        new col = td.classList.add(vertical)
+        const col = td.className.add(vertical.toString())
         row.appendChild(col)
 
     }
