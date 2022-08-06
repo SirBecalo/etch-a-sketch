@@ -6,9 +6,8 @@
 // const dimension = 50/num
 
 //table templates
-const table = document.getElementById("table") //where the magic happens!
-const tr = document.createElement("tr")
-const td = document.createElement("td")
+const sketch = document.querySelector(".sketch") //where the magic happens!
+
 
 //the template for a pixel
 // const box = document.createElement("div")
@@ -25,18 +24,11 @@ const td = document.createElement("td")
 let gridSize = 6
 
 function fillTable(size){
-for (let horizontal = 0; horizontal < size; horizontal++) {
-    let row = tr
-    row.className = horizontal.toString()
-    table.appendChild(row)
-    for (let vertical = 0; vertical < size; vertical++) {
-        let col = td
-        col.className = vertical.toString()
-        row.appendChild(col)
-
-    }
-    
+for (let pixels = 0; pixels <= size; pixels++) {
+    const pixel = document.createElement("div") //1 div,  pixel!
+    pixel.id = pixels //gotta name them all!
+    sketch.appendChild(pixel) //gotta dispaly them all!
  }  
 }
     
-fillTable(gridSize)
+fillTable(gridSize ** 2)
