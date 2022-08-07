@@ -27,6 +27,7 @@ function fillTable(size){
 for (let pixels = 0; pixels <= size; pixels++) {
     const pixel = document.createElement("div") //1 div,  pixel!
     pixel.id = pixels //gotta name them all!
+    pixel.classList.add("pixel")
     sketch.appendChild(pixel) //gotta dispaly them all!
  }  
 }

@@ -75,3 +75,7 @@ body{
 td{
     color: white;
 }
+
+.pixel{
+    flex-grow: 1;
+}
