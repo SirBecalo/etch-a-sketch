@@ -11,7 +11,8 @@ body{
     padding: 0;
     margin: auto;
     margin-top: 1%;
-    width: 60%
+    height: 90vh;
+    width: 50vw;
 }
 
 .title-bar{
@@ -20,7 +21,7 @@ body{
     justify-content: center;
     background-color: #2E2F2F;
     width: 100%;
-    flex: 1 1 auto;
+    height: 18%;
     
 }
 .title{
@@ -42,8 +43,7 @@ body{
     align-self: flex-start;
     height: 100%;
     margin: 0;
-    flex: 1 1 auto;
-    border-bottom: 2px solid light;
+    width: 25%;
     
 }
 
@@ -57,13 +57,18 @@ body{
     flex-direction: column;
     width: 80%;
     text-align: center;
-    border-bottom: 2px solid #2E2F2F;
 }
 
 .sketch{
     display: flex;
+    border: 1px solid gray;
     flex-direction: row;
     flex-flow: wrap;
+    flex-grow: 1;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }
 
 .table{
@@ -76,6 +81,14 @@ td{
     color: white;
 }
 
+.col{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .pixel{
+    display: flex;
+    width: 100%;
     flex-grow: 1;
 }
