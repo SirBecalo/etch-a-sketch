@@ -20,7 +20,31 @@
             <div class="side-bar">
 
                 <h3 class="side-bar-title">side bar</h3>
-        
+                <div>
+                    <form action="app.js" name="options" id="options">
+                        <fieldset>
+                            <legend>Customization</legend>
+                            <label for="sizeSlider">Grid Size</label>
+                            <input type="range" name="size" id="sizeSlider" value="32" min="8" max="64" step="4"> 
+                           
+                            <legend>Style:</legend>
+
+                            <input type="radio" name="style" class="styleoption" id="blackOnWhite" value="blackOnWhite"> 
+                            <label for="blackOnWhite">Black On White</label>
+                            <br>
+                            <input type="radio" name="style" class="styleoption" id="whiteOnBlack" value="whiteOnBlack"> 
+                            <label for="whiteOnBlack">White On Black</label>
+                            <br>
+                            <input type="radio" name="style" class="styleoption" id="gradient" value="gradient"> 
+                            <label for="gradient">Gradient</label>
+                            <br>
+                            <input type="radio" name="style" class="styleoption" id="bizzare" value="bizzare"> 
+                            <label for="bizzare">Bizzare!</label>
+                        </fieldset>
+
+                       
+                    </form>
+                </div>
             </div>
            
             <div class="sketch-area">
