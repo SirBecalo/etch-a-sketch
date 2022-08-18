@@ -4,7 +4,10 @@
 
 const sketch = document.querySelector(".sketch") //where the magic happens!
 
-let gridSize = 6 //size of grid per side
+const options = document.querySelector("#options")//the form
+
+let gridSize = document.querySelector("#sizeSlider").value // size selected by slider, default 36
+console.log(gridSize)
 
 function createCanvas(size){
 
@@ -24,16 +27,18 @@ function createCanvas(size){
         }  
     }
 }
+
+// sketch.addEventListener(onmouseover, changeColorBlack(sketch), false)
+createCanvas(gridSize)
+
+
+
+
 // changes element color when called by listener
 //to scale this up i think classlist editing will be more appropriate.
-
-
 sketch.onmouseover = function (event) {
     let toChange = event.target.closest('.pixel')
     console.log(toChange)
     toChange.style.backgroundColor = "black"
     
 }
-// sketch.addEventListener(onmouseover, changeColorBlack(sketch), false)
-createCanvas(gridSize)
-
